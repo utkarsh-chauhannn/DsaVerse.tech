@@ -1,0 +1,15 @@
+{
+  "short_name": "DSA Verse",
+  "name": "DSA Verse - Data Structures & Algorithms Visualizer",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#0f0f0f"
+}
