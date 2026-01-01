@@ -8,6 +8,17 @@ const Home = () => {
     navigate(link);
   };
 
+  const handleLearnMoreClick = (event) => {
+    event.preventDefault();
+    const el = document.getElementById('features');
+    if (el) {
+      el.scrollIntoView();
+      if (window.location.hash !== '#features') {
+        window.history.replaceState(null, '', '#features');
+      }
+    }
+  };
+
   const categories = [
     {
       title: 'Sorting Algorithms',
@@ -43,9 +54,9 @@ const Home = () => {
           <Link to="/data-structures" className="btn btn-hero">
             Get Started
           </Link>
-          <Link to="#features" className="btn btn-secondary-outline">
+          <a href="#features" onClick={handleLearnMoreClick} className="btn btn-secondary-outline">
             Learn More
-          </Link>
+          </a>
         </div>
       </header>
 
